@@ -28,7 +28,7 @@ func isMatched(_ openningBracket: String, _ closingBracket: String) -> Bool {
     (openningBracket == "(" && closingBracket == ")")
 }
 
-func isParenBalenced(paren: String) -> Bool {
+func isParenBalanced(paren: String) -> Bool {
     let stack: Stack = Stack()
     let OPENNING_BRACKETS: String = "{(["
     let ALL_BRACKETS: String = "{[()}]"
@@ -56,4 +56,4 @@ func isParenBalenced(paren: String) -> Bool {
     return stack.isEmpty()
 }
 
-print(isParenBalenced(paren: "()[(}{a})]"))
+print(isParenBalanced(paren: "()[(}{a})]"))
