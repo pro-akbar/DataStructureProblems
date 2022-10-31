@@ -39,4 +39,4 @@ func reverse(string: String) -> String {
     return reverse
 }
 
-print(reverse(string: "Hello"))
+print(reverse(string: "abcd"))
